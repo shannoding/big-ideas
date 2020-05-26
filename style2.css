@@ -66,7 +66,7 @@ nav ul {
 	}
 	#land > div {
 		width:50%;
-		padding:4rem 1rem;
+		padding:4rem 2rem;
 	}
 	#land h1 {
 		font-weight: bold;
@@ -94,18 +94,27 @@ nav ul {
 	color:white;
 }
 
+
 #footer {
+	width: 100%;
+	margin-top:2rem;
 	text-align: center;
-	color:white;
-	background: #ffbd59;
+	background: #FFEFE5;
 	padding:1rem 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#footer img {
+	width:6rem;
 }
 #footer p {
-	margin:0;
+	display: inline-block;
 	vertical-align: middle;
-}
-#footer small {
+	font-size:0.8rem;
 	margin-left:1rem;
+	font-weight: bold;
+	color:#333;
 }
 
 .row {
@@ -125,26 +134,56 @@ nav ul {
 	display:flex;
 	align-items: center;
 }
-.num-card-item .num-disp {
-	position: absolute;
-	text-align:center;
-	background:#ff914d;
-	width:3rem;
-	height:3rem;
-	margin:0;
-	padding:1rem;
-	border-radius:1.5rem;
-}
+	.num-card-item .num-disp {
+		position: absolute;
+		text-align:center;
+		background:#ff914d;
+		width:3rem;
+		height:3rem;
+		margin:0;
+		padding:1rem;
+		border-radius:1.5rem;
+	}
 	.num-disp h3 {
 		line-height:1rem;
 		margin:0;
 		color:white;
 	}
-.num-card-item p {
-	font-size:0.9rem;
-	padding-left:4rem;
-	margin:0;
+	.num-card-item p {
+		font-size:0.9rem;
+		padding-left:4rem;
+		margin:0;
+	}
+
+
+.table {
+	border-collapse: collapse;
+	min-width:500px;
+	overflow:auto;
+	margin:1rem 0;
 }
+.table tr {
+	border-top:1px solid #EEE;
+	border-bottom:1px solid #EEE;
+}
+.table tr:last-child {
+	border-bottom:3px solid #EEE;
+}
+.table td {
+	padding:0 2rem;
+}
+.table th {
+	padding:0 1rem;
+	text-align: left;
+	width:30%;
+}
+.table ul {
+	padding-left:1rem;
+}
+	.table li {
+		padding-left:1rem;
+	}
+
 
 
 
