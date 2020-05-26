@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+/*
+light:#FFEFE5;
+primary:#ffbd59;
+solid:#ff914d;
+shadow:#CC743D;
+*/
+
+* {
+	box-sizing: border-box;
+}
+body {
+	margin:0;
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3 {
+	color:#333;
+}
+
+nav {
+	width:100%;
+}
+nav ul {
+	list-style-type:none;
+	padding:0;
+	margin:0;
+	text-align: right;
+	padding:0 1rem;
+}
+.nav-item {
+	display: inline-block;
+}
+	.nav-item a {
+		display: inline-block;
+		padding:2rem 1rem 1rem 1rem;
+		text-decoration: none;
+		color:#333;
+		font-weight: bold;
+		border-bottom:3px solid transparent;
+		opacity:0.9;
+	}
+	.nav-item a:hover {
+		opacity:1;
+		border-bottom:3px solid #333;
+	}
+
+
+#land {
+	width:100%;
+	margin:0;
+	display:flex;
+	padding:4rem 2rem;
+	
+}
+	#land img {
+		width:50%;
+		object-fit:contain;
+	}
+	#land div {
+		width:50%;
+		padding:0 1rem;
+	}
+	#land h1 {
+		font-weight: bold;
+		margin-bottom:0;
+	}
+	#land h2 {
+		color:#777;
+		font-size:1.2rem;
+		font-weight:normal;
+	}
+
+.container {
+	padding:3rem 5rem;
+}
+
+#about {
+	background:rgba(255,239,229,0.3);
+}
+
+.container-dark {
+	background:#333;
+	color:white;
+}
+.container-dark h1 {
+	color:white;
+}
+
+#footer {
+	text-align: center;
+	color:white;
+	background: #ffbd59;
+	padding:1rem 0;
+}
+#footer p {
+	margin:0;
+	vertical-align: middle;
+}
+#footer small {
+	margin-left:1rem;
+}
+
+.row {
+	display: flex;
+	margin-bottom:2rem;
+}
+.card-item {
+	padding:1rem 2rem;
+	background:white;
+	margin:0 1rem;
+	border-radius:1rem;
+	box-shadow:0 0 10px #EEE;
+}
+.card-item img {
+	width:50%;
+	object-fit:contain;
+	display: block;
+	margin: auto;
+}
+.card-item h3 {
+	text-align:center;
+}
+.card-item p {
+	font-size:0.9rem;
+}
+
+
+
+.responsive-iframe-container {
+position: relative;
+padding-bottom: 56.25%;
+padding-top: 30px;
+height: 0;
+overflow: hidden;
+}
+
+.responsive-iframe-container iframe,
+.vresponsive-iframe-container object,
+.vresponsive-iframe-container embed {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+.responsive-iframe-container-sm {
+  position: relative;
+  padding-bottom: 500px;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+.responsive-iframe-container-sm iframe,
+.vresponsive-iframe-container-sm object,
+.vresponsive-iframe-container-sm embed {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+
+button {
+	padding:10px 15px;
+	border-radius:10px;
+	background: #ff914d;
+	color:white;
+	border:none;
+	font-weight:bold;
+	font-size:1.2rem;
+	border-bottom:5px solid #CC743D;
+}
+.but-center {
+	text-align: center;
+}
