@@ -52,8 +52,11 @@ nav ul {
 #land {
 	width:100%;
 	margin:0;
-	display:flex;
 	background:#FFEFE5;
+	margin-bottom:2rem;
+}
+#land .container {
+	display:flex;
 }
 	#land .land-image-box {
 		display: flex;
@@ -64,7 +67,7 @@ nav ul {
 		padding:0 1rem;
 		object-fit:contain;
 	}
-	#land > div {
+	#land .container > div {
 		width:50%;
 		padding:4rem 2rem;
 	}
@@ -78,19 +81,23 @@ nav ul {
 		font-weight:normal;
 	}
 
+.container-out {
+	padding:2rem 0;
+}
 .container {
-	padding:2rem 5rem;
+	max-width:736px;
+	margin:0 auto;
 }
 
 #about {
 	
 }
 
-.container-dark {
+.container-out-dark {
 	background:#333;
 	color:white;
 }
-.container-dark h1 {
+.container-out-dark h1 {
 	color:white;
 }
 
@@ -150,7 +157,6 @@ nav ul {
 		color:white;
 	}
 	.num-card-item p {
-		font-size:0.9rem;
 		padding-left:4rem;
 		margin:0;
 	}
@@ -158,8 +164,6 @@ nav ul {
 
 .table {
 	border-collapse: collapse;
-	min-width:500px;
-	overflow:auto;
 	margin:1rem 0;
 }
 .table tr {
@@ -185,42 +189,6 @@ nav ul {
 	}
 
 
-
-
-.responsive-iframe-container {
-position: relative;
-padding-bottom: 56.25%;
-padding-top: 30px;
-height: 0;
-overflow: hidden;
-}
-
-.responsive-iframe-container iframe,
-.vresponsive-iframe-container object,
-.vresponsive-iframe-container embed {
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-}
-.responsive-iframe-container-sm {
-  position: relative;
-  padding-bottom: 500px;
-  padding-top: 30px;
-  height: 0;
-  overflow: hidden;
-}
-.responsive-iframe-container-sm iframe,
-.vresponsive-iframe-container-sm object,
-.vresponsive-iframe-container-sm embed {
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-}
-
 .button {
 	display: inline-block;
 	padding:10px 15px;
@@ -236,4 +204,40 @@ height: 100%;
 }
 .but-center {
 	text-align: center;
+}
+
+@media all and (max-width: 1280px) { 
+
+	
+}
+@media all and (max-width: 980px) { 
+	.container-out {
+		padding:2rem 0;
+	}
+	.container {
+		margin:0 5rem;
+	}
+	.table th {
+		width:20%;
+	}
+}
+@media all and (max-width: 736px) { 
+	.container-out {
+		padding:1rem 0;
+	}
+	.container {
+		margin:0 3rem;
+	}
+	.table {
+		min-width:500px;
+	}
+	.table-scroll {
+		overflow-x:auto;
+	}
+}
+@media all and (max-width: 480px) { 
+
+	.container {
+		margin:0 1rem;
+	}
 }
