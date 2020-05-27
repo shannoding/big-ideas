@@ -9,6 +9,7 @@ shadow:#CC743D;
 * {
 	box-sizing: border-box;
 }
+
 body {
 	margin:0;
 	font-family: 'Open Sans', sans-serif;
@@ -66,10 +67,14 @@ nav ul {
 }
 #land .container {
 	display:flex;
+	align-items: center;
 }
 	#land .land-image-box {
 		display: flex;
 		align-items: center;
+		width:50%;
+		padding-top:1rem;
+		padding-bottom:2rem;
 	}
 	.land-image-box .land-image-slide {
 		width:100%;
@@ -80,15 +85,13 @@ nav ul {
 		max-width:100%;
 		border-radius:50%;
 	}
-	#land .container > div {
-		width:50%;
-		padding-top:1rem;
-		padding-bottom:4rem;
-	}
 	#land .land-text-box {
 		padding-left:2rem;
 		display: flex;
 		align-items:center;
+		width:50%;
+		padding-top:1rem;
+		padding-bottom:2rem;
 	}
 	#land h1 {
 		font-weight: bold;
@@ -284,16 +287,39 @@ nav ul {
 	.container {
 		margin:0 2.5rem;
 	}
+
 	.table {
 		min-width:500px;
 	}
 	.table-scroll {
 		overflow-x:auto;
 	}
+
+	nav {
+		display: none;
+	}
+
 	#land .container > div {
-		padding-top:0;
+		padding-top:3rem;
 		padding-bottom:2rem;
 	}
+	#land .land-image-box {
+		width:40%;
+	}
+	#land .land-text-box {
+		width:60%;
+	}
+	#land h1 {
+		font-size:1.5em;
+	}
+	#land h2 {
+		margin-top:0.2em;
+	}
+	#land .button {
+		margin:0;
+	}
+
+
 
 	.slick-next:before, .slick-prev:before {
 		font-size:48px;
@@ -323,5 +349,12 @@ nav ul {
 	.person .bio {
 		padding:0;
 		width:100%;
+	}
+
+	#land .land-text-box {
+		padding-left:1rem;
+	}
+	#land .land-text-box h3 {
+		font-size:1em;
 	}
 }
