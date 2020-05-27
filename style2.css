@@ -206,6 +206,36 @@ nav ul {
 	text-align: center;
 }
 
+.person {
+	padding:2rem;
+	display:flex;
+	align-items: center;
+}
+.person > img {
+	width:30%;
+	height:100%;
+	object-fit: contain;
+}
+.person .bio {
+	width:70%;
+	padding-left:1rem;
+}
+.person .bio p {
+	font-size:0.9rem;
+}
+
+.placeholder-image {
+	width:300px;
+	height:100%;
+	background:green;
+}
+.slick-next:before {
+	color:#ff914d;
+}
+.slick-prev:before {
+	color:#ff914d;
+}
+
 @media all and (max-width: 1280px) { 
 
 	
