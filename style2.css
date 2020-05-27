@@ -87,7 +87,7 @@ nav ul {
 	}
 	#land h2 {
 		color:#777;
-		font-size:1.2rem;
+		font-size:1.2em;
 		font-weight:normal;
 	}
 
@@ -128,8 +128,8 @@ nav ul {
 #footer p {
 	display: inline-block;
 	vertical-align: middle;
-	font-size:0.8rem;
-	margin-left:1rem;
+	font-size:0.8em;
+	margin-left:1em;
 	font-weight: bold;
 	color:#333;
 }
@@ -207,7 +207,7 @@ nav ul {
 	color:white;
 	border:none;
 	font-weight:bold;
-	font-size:1.2rem;
+	font-size:1.2em;
 	border-bottom:5px solid #CC743D;
 	margin:1rem 0;
 	text-decoration: none;
@@ -231,13 +231,13 @@ nav ul {
 	padding-left:1rem;
 }
 .person .bio p {
-	font-size:0.9rem;
+	font-size:0.9em;
 }
 
 
 .slick-next:before, .slick-prev:before {
-	font-size:2rem;
 	color:#ff914d;
+	font-size:24px;
 }
 
 @media all and (max-width: 1280px) { 
@@ -258,6 +258,9 @@ nav ul {
 	#land {
 		margin-bottom:0;
 	}
+	.slick-next:before, .slick-prev:before {
+		font-size:28px;
+	}
 }
 @media all and (max-width: 736px) { 
 	.container-out {
@@ -276,6 +279,19 @@ nav ul {
 		padding-top:0;
 		padding-bottom:2rem;
 	}
+
+	.slick-next:before, .slick-prev:before {
+		font-size:64px;
+		color:#ff914d;
+	}
+	.slick-prev {
+		left:-16px;
+		z-index:999;
+	}
+	.slick-next {
+		right:32px;
+		z-index:999;
+	}
 }
 @media all and (max-width: 480px) { 
 
@@ -292,13 +308,5 @@ nav ul {
 	.person .bio {
 		padding:0;
 		width:100%;
-	}
-	.slick-prev {
-		left:0.5rem;
-		z-index:999;
-	}
-	.slick-next {
-		right:1rem;
-		z-index:999;
 	}
 }
