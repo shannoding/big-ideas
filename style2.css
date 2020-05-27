@@ -18,6 +18,13 @@ h1, h2, h3 {
 	color:#333;
 }
 
+p, li {
+	line-height:1.5em;
+}
+li {
+	padding-bottom:0.2em;
+}
+
 nav {
 	width:100%;
 	background: #FFEFE5;
@@ -92,7 +99,7 @@ nav ul {
 	}
 
 .container-out {
-	padding:1.5rem 5rem;
+	padding:1rem 5rem;
 }
 .container {
 	max-width:60rem;
@@ -207,7 +214,6 @@ nav ul {
 	color:white;
 	border:none;
 	font-weight:bold;
-	font-size:1.2em;
 	border-bottom:5px solid #CC743D;
 	margin:1rem 0;
 	text-decoration: none;
@@ -229,9 +235,6 @@ nav ul {
 .person .bio {
 	width:70%;
 	padding-left:1rem;
-}
-.person .bio p {
-	font-size:0.9em;
 }
 
 
@@ -259,7 +262,7 @@ nav ul {
 		margin-bottom:0;
 	}
 	.slick-next:before, .slick-prev:before {
-		font-size:28px;
+		font-size:32px;
 	}
 }
 @media all and (max-width: 736px) { 
@@ -281,15 +284,15 @@ nav ul {
 	}
 
 	.slick-next:before, .slick-prev:before {
-		font-size:64px;
+		font-size:48px;
 		color:#ff914d;
 	}
 	.slick-prev {
-		left:-16px;
+		left:-24px;
 		z-index:999;
 	}
 	.slick-next {
-		right:32px;
+		right:12px;
 		z-index:999;
 	}
 }
